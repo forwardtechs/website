@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forward Techs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Forward Techs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Inicio -->
+    <section id="inicio" class="py-5 text-center text-light bg-gradient">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Forward Techs</h1>
+                    <p class="lead">Nos especializamos en soluciones personalizadas que optimizan eficiencia y productividad. Nuestra pasión es transformar ideas en realidades tecnológicas.</p>
+                    <p>Desde la creación de plataformas innovadoras hasta la implementación de estrategias de automatización, Forward Techs se compromete a ayudar a las empresas a crecer y adaptarse a la era digital. Con un enfoque en la atención personalizada y el desarrollo de soluciones a medida, transformamos cada desafío en una oportunidad para innovar y avanzar.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="forward.png" alt="Forward Techs" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-5 text-center bg-light">
+        <div class="container">
+            <h2>Servicios</h2>
+            <p class="lead">Elaboramos software con una amplia variedad de tecnologías:</p>
+            <p>Utilizamos PHP, HTML, Python, y bases de datos MySQL y NoSQL (como MongoDB) para desarrollar soluciones robustas y escalables. Nos destacamos en la automatización de procesos mediante Python, lo que permite a nuestros clientes reducir costos y aumentar la productividad. Además, diseñamos prototipos interactivos que ayudan a visualizar proyectos antes de la implementación final.</p>
+            <div class="row mt-4">
+                <div class="col-md-2 col-sm-4 mb-3">
+                    <img src="bootstrap.jpeg" alt="Bootstrap" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-2 col-sm-4 mb-3">
+                    <img src="codeigniter.png" alt="CodeIgniter" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-2 col-sm-4 mb-3">
+                    <img src="mongoDB.png" alt="MongoDB" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-2 col-sm-4 mb-3">
+                    <img src="MySQL.png" alt="MySQL" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-2 col-sm-4 mb-3">
+                    <img src="PHP.png" alt="PHP" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-2 col-sm-4 mb-3">
+                    <img src="Python.png" alt="Python" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quienes Somos -->
+    <section id="quienes-somos" class="py-5 text-center bg-primary text-light">
+        <div class="container">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos Facundo Simeoni y Federico Moran, Técnicos Superiores en Desarrollo de Software, apasionados por la tecnología y comprometidos con el éxito de nuestros clientes. Nuestra experiencia abarca desde el desarrollo web hasta la automatización y el diseño de bases de datos. Creemos que cada proyecto es una oportunidad para innovar y crear valor.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center mb-4">
+                    <img src="facu.jpeg" alt="Facundo Simeoni" class="img-fluid rounded-circle shadow-lg fixed-size-img">
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <img src="fede.jpg" alt="Federico Moran" class="img-fluid rounded-circle shadow-lg fixed-size-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5 text-center bg-light">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Puedes encontrarnos en nuestras redes sociales o envíanos un mensaje mediante el formulario a continuación.</p>
+            <p>
+                <a href="https://www.instagram.com/forwardtechs" class="btn btn-outline-primary"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="mailto:forwardtechok@gmail.com" class="btn btn-outline-primary"><i class="fas fa-envelope"></i> Gmail</a>
+            </p>
+            <form id="contactForm" class="mt-4">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-primary text-light text-center">
+        <div class="container">
+            <p>&copy; 2024 Forward Techs. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            var emailField = document.getElementById('email');
+            var mensajeField = document.getElementById('mensaje');
+
+            if (!emailField.value.includes('@') || mensajeField.value.trim() === '') {
+                alert('Por favor, ingresa un correo electrónico válido y asegúrate de que el mensaje no esté vacío.');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

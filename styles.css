@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5fafd;
+}
+h1, h2 {
+    color: #004085; /* Azul Francia */
+}
+.bg-primary {
+    background-color: #007bff !important; /* Azul Francia */
+}
+.bg-gradient {
+    background: linear-gradient(135deg, #037af0, #042ccb); /* Gradiente de celeste a azul */
+}
+/* Cambiando el color de las letras del menú y el fondo */
+.navbar-dark {
+    background-color: #343a40; /* Fondo oscuro para mejor contraste */
+}
+.navbar-dark .navbar-brand {
+    color: #ffffff; /* "Forward Techs" en blanco */
+}
+.navbar-dark .nav-link {
+    color: #ffffff; /* Letras del menú en blanco */
+    font-weight: bold; /* Negrita para hacerlas más fuertes */
+}
+.navbar-dark .nav-link:hover {
+    color: #ffd700; /* Dorado al pasar el cursor */
+}
+section {
+    padding: 40px 0;
+}
+footer {
+    background-color: #004085;
+}
+footer p {
+    margin: 0;
+    color: #ffffff;
+}
+.btn-outline-primary {
+    color: #004085;
+    border-color: #004085;
+}
+.btn-outline-primary:hover {
+    background-color: #004085;
+    color: #fff;
+}
+.fixed-size-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.text-light {
+    color: #f5fafd !important;
+}

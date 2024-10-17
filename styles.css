@@ -2,73 +2,52 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f5fafd;
 }
-
 h1, h2 {
     color: #004085; /* Azul Francia */
 }
-
 .bg-primary {
     background-color: #007bff !important; /* Azul Francia */
 }
-
 .bg-gradient {
     background: linear-gradient(135deg, #037af0, #042ccb); /* Gradiente de celeste a azul */
 }
-
 /* Cambiando el color de las letras del menú y el fondo */
 .navbar-dark {
     background-color: #343a40; /* Fondo oscuro para mejor contraste */
 }
-
 .navbar-dark .navbar-brand {
     color: #ffffff; /* "Forward Techs" en blanco */
 }
-
 .navbar-dark .nav-link {
     color: #ffffff; /* Letras del menú en blanco */
     font-weight: bold; /* Negrita para hacerlas más fuertes */
 }
-
 .navbar-dark .nav-link:hover {
     color: #ffd700; /* Dorado al pasar el cursor */
 }
-
 section {
-    padding: 60px 0; /* Ajusta el espaciado superior e inferior */
+    padding: 40px 0;
 }
-
 footer {
     background-color: #004085;
 }
-
 footer p {
     margin: 0;
     color: #ffffff;
 }
-
-.card {
-    border: none; /* Eliminar el borde de las tarjetas */
-    background-color: #ffffff; /* Fondo blanco para las tarjetas */
-    border-radius: 10px; /* Bordes redondeados para las tarjetas */
-    transition: transform 0.3s; /* Efecto de transición */
+.btn-outline-primary {
+    color: #004085;
+    border-color: #004085;
 }
-
-.card:hover {
-    transform: translateY(-5px); /* Efecto al pasar el cursor */
+.btn-outline-primary:hover {
+    background-color: #004085;
+    color: #fff;
 }
-
-.card-title {
-    font-weight: bold; /* Títulos en negrita */
-    color: #007bff; /* Color azul para los títulos */
+.fixed-size-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
-
-.card-text {
-    color: #666; /* Color gris para el texto */
-}
-
-/* Media Queries para Responsividad */
-@media (max-width: 768px) {
-    #servicios .col-md-4 {
-        margin-bottom: 20px; /* Espaciado entre tarjetas en móviles */
-    }
+.text-light {
+    color: #f5fafd !important;
 }

@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Forward Techs ofrece soluciones personalizadas en desarrollo de software.">
-    <meta name="keywords" content="software, desarrollo, automatización, soluciones tecnológicas">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Forward Techs</title> 
+    <title>Forward Techs</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -37,7 +34,7 @@
                     <p>Desde la creación de plataformas innovadoras hasta la implementación de estrategias de automatización, Forward Techs se compromete a ayudar a las empresas a crecer y adaptarse a la era digital. Con un enfoque en la atención personalizada y el desarrollo de soluciones a medida, transformamos cada desafío en una oportunidad para innovar y avanzar.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="forward.png" alt="Logo de Forward Techs" class="img-fluid rounded shadow-lg">
+                    <img src="forward.png" alt="Forward Techs" class="img-fluid rounded shadow-lg">
                 </div>
             </div>
         </div>
@@ -102,4 +99,38 @@
                     <div class="form-group col-md-6">
                         <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
                     </div>
-                    <div class="form-group col-md
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-primary text-light text-center">
+        <div class="container">
+            <p>&copy; 2024 Forward Techs. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            var emailField = document.getElementById('email');
+            var mensajeField = document.getElementById('mensaje');
+
+            if (!emailField.value.includes('@') || mensajeField.value.trim() === '') {
+                alert('Por favor, ingresa un correo electrónico válido y asegúrate de que el mensaje no esté vacío.');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

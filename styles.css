@@ -51,3 +51,24 @@ footer p {
 .text-light {
     color: #f5fafd !important;
 }
+/* Ajustes de las imágenes en la sección Servicios */
+#servicios .img-fluid {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Limitar el tamaño máximo en pantallas pequeñas */
+}
+
+/* Para pantallas más pequeñas, ajustamos el tamaño de las imágenes */
+@media (max-width: 768px) {
+    #servicios .col-sm-4 {
+        flex: 0 0 50%; /* Dos imágenes por fila en pantallas pequeñas */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    #servicios .col-sm-4 {
+        flex: 0 0 100%; /* Una imagen por fila en pantallas extra pequeñas */
+        max-width: 100%;
+    }
+}

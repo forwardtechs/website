@@ -2,52 +2,98 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f5fafd;
 }
+
 h1, h2 {
     color: #004085; /* Azul Francia */
 }
+
 .bg-primary {
     background-color: #007bff !important; /* Azul Francia */
 }
+
 .bg-gradient {
     background: linear-gradient(135deg, #037af0, #042ccb); /* Gradiente de celeste a azul */
 }
+
 /* Cambiando el color de las letras del menú y el fondo */
 .navbar-dark {
     background-color: #343a40; /* Fondo oscuro para mejor contraste */
 }
+
 .navbar-dark .navbar-brand {
     color: #ffffff; /* "Forward Techs" en blanco */
 }
+
 .navbar-dark .nav-link {
     color: #ffffff; /* Letras del menú en blanco */
     font-weight: bold; /* Negrita para hacerlas más fuertes */
 }
+
 .navbar-dark .nav-link:hover {
     color: #ffd700; /* Dorado al pasar el cursor */
 }
+
 section {
-    padding: 40px 0;
+    padding: 60px 0; /* Ajusta el espaciado superior e inferior */
 }
+
 footer {
     background-color: #004085;
 }
+
 footer p {
     margin: 0;
     color: #ffffff;
 }
-.btn-outline-primary {
-    color: #004085;
-    border-color: #004085;
+
+.card {
+    border: none; /* Eliminar el borde de las tarjetas */
+    background-color: #ffffff; /* Fondo blanco para las tarjetas */
+    border-radius: 10px; /* Bordes redondeados para las tarjetas */
+    transition: transform 0.3s; /* Efecto de transición */
 }
-.btn-outline-primary:hover {
-    background-color: #004085;
-    color: #fff;
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto al pasar el cursor */
 }
-.fixed-size-img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
+
+.card-title {
+    font-weight: bold; /* Títulos en negrita */
+    color: #007bff; /* Color azul para los títulos */
 }
-.text-light {
-    color: #f5fafd !important;
+
+.card-text {
+    color: #666; /* Color gris para el texto */
+}
+
+/* Estilo para imágenes en la sección Servicios */
+.img-fluid {
+    max-width: 100%; 
+    height: auto;
+}
+
+#servicios img {
+    width: 100%; /* Para asegurarse que las imágenes ocupen el espacio disponible */
+    max-width: 150px; /* Ajusta el tamaño máximo para las imágenes */
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+#servicios img:hover {
+    transform: scale(1.1); /* Efecto zoom al pasar el cursor */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    #servicios .col-md-2 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%; /* Tres imágenes por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 576px) {
+    #servicios .col-md-2 {
+        flex: 0 0 50%;
+        max-width: 50%; /* Dos imágenes por fila en pantallas pequeñas */
+    }
 }
